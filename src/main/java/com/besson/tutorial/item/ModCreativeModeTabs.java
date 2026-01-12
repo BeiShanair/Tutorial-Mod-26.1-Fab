@@ -1,6 +1,7 @@
 package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialMod;
+import com.besson.tutorial.block.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -36,6 +37,10 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.ICE_ETHER);
                 output.accept(ModItems.RAW_ICE_ETHER);
                 output.accept(ModItems.CARDBOARD);
+
+                output.accept(ModBlocks.ICE_ETHER_BLOCK);
+                output.accept(ModBlocks.RAW_ICE_ETHER_BLOCK);
+                output.accept(ModBlocks.ICE_ETHER_ORE);
 
                 output.accept(Items.DIAMOND);
             }).build();

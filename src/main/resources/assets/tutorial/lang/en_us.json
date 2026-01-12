@@ -2,6 +2,9 @@
   "item.tutorial.ice_ether": "Ice Ether",
   "item.tutorial.raw_ice_ether": "Raw Ice Ether",
   "item.tutorial.material.cardboard": "Cardboard",
+  "block.tutorial.ice_ether_block": "Ice Ether Block",
+  "block.tutorial.raw_ice_ether_block": "Raw Ice Ether Block",
+  "block.tutorial.ice_ether_ore": "Ice Ether Ore",
   "itemGroup.tutorial": "Tutorial Mod Tabs",
   "itemGroup.tutorial2": "Tutorial Mod Tabs2"
 }
