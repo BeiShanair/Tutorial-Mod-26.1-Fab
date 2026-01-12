@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "tutorial:raw_ice_ether",
+    "minecraft:stone"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorial:ice_ether_ore"
+  }
+}
