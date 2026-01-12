@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "描述",
+	"authors": [
+		"Beishan"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorial/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.besson.tutorial.TutorialMod"
+		],
+		"fabric-datagen": [
+			"com.besson.tutorial.TutorialModDataGenerator"
+		],
+		"client": [
+			"com.besson.tutorial.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorial.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~26.1-",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
