@@ -10,7 +10,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CampfireCookingRecipe;
-import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.level.ItemLike;
 
 import java.util.List;
@@ -28,12 +28,12 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         return new RecipeProvider(provider, recipeOutput) {
             @Override
             public void buildRecipes() {
-                oreSmelting(ICE_ETHER_LIST, RecipeCategory.MISC, ModItems.ICE_ETHER, 0.7f, 200, "ice_ether");
-                oreBlasting(ICE_ETHER_LIST, RecipeCategory.MISC, ModItems.ICE_ETHER, 0.7f, 100, "ice_ether");
+                oreSmelting(ICE_ETHER_LIST, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ICE_ETHER, 0.7f, 200, "ice_ether");
+                oreBlasting(ICE_ETHER_LIST, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ICE_ETHER, 0.7f, 100, "ice_ether");
 
                 nineBlockStorageRecipes(RecipeCategory.MISC, ModItems.ICE_ETHER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICE_ETHER_BLOCK);
 
-                simpleCookingRecipe("campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING_RECIPE, CampfireCookingRecipe::new,
+                simpleCookingRecipe("campfire_cooking", CampfireCookingRecipe::new,
                         600, ModItems.RAW_ICE_ETHER, ModItems.ICE_ETHER, 0.35f);
 
                 shaped(RecipeCategory.MISC, Items.SUGAR, 3)

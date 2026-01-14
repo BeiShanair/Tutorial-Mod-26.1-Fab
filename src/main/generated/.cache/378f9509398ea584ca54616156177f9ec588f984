@@ -1,4 +1,4 @@
-// 26.1-snapshot-2	-999999999-01-01T00:00:00	Tutorial Mod/Block Loot Tables
+// 26.1-snapshot-3	-999999999-01-01T00:00:00	Tutorial Mod/Block Loot Tables
 83e39d9c3a4c785cffc089b3f4809990b18868ff data/tutorial/loot_table/blocks/ice_ether_block.json
 df9b5bd45fb2328626929bf496b30b9217608a9f data/tutorial/loot_table/blocks/ice_ether_ore.json
 115e8062ff45cd5971af8f0e5a665c964950aae0 data/tutorial/loot_table/blocks/raw_ice_ether_block.json
