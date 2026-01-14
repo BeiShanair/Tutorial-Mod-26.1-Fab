@@ -18,6 +18,10 @@ public class ModItems {
     public static final Item RAW_ICE_ETHER = registerItem("raw_ice_ether");
     public static final Item CARDBOARD = registerItem("material/cardboard");
 
+    public static final Item CORN = registerItem("corn", Item::new, new Item.Properties().food(ModFoods.CORN));
+    public static final Item STRAWBERRY = registerItem("strawberry", Item::new, new Item.Properties().food(ModFoods.STRAWBERRY, ModConsumables.STRAWBERRY));
+    public static final Item CHEESE = registerItem("cheese", Item::new, new Item.Properties().food(ModFoods.CHEESE, ModConsumables.CHEESE));
+
     private static Item registerItem(final String name, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
         Item item = (Item)itemFactory.apply(properties.setId(key));
