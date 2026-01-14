@@ -1,0 +1,16 @@
+// 26.1-snapshot-2	-999999999-01-01T00:00:00	Tutorial Mod/Model Definitions
+4b840b81a076b843220a6be099d2a36cb6e05b76 assets/tutorial/blockstates/ice_ether_block.json
+ca6814008032d78d8266fe133b457ffebf352cc8 assets/tutorial/blockstates/ice_ether_ore.json
+af4a4bf40cf59cc183b20d1ce2ac9b02c40e7af8 assets/tutorial/blockstates/raw_ice_ether_block.json
+5097578a0217dc7cc31c70c31e70a4e67f0d7398 assets/tutorial/items/ice_ether.json
+30db53660531ba44154d2bb57e596dc4d4670481 assets/tutorial/items/ice_ether_block.json
+83033eede292fac90240097408e6ae7df3525511 assets/tutorial/items/ice_ether_ore.json
+f22395e1cc92179743473f0f276b4b2e96a3e7f9 assets/tutorial/items/material/cardboard.json
+3969fdbe1a3f2409ebdf37d6d2a8b0f8b5dfe7cc assets/tutorial/items/raw_ice_ether.json
+d00554864d3832d8d55f36737a7f82f0dec912e8 assets/tutorial/items/raw_ice_ether_block.json
+e8dedd8e7b326b91dffd911e73488c6ae6f8a21e assets/tutorial/models/block/ice_ether_block.json
+316ebcd07b9d253d60993983907b0bf9446ac7f3 assets/tutorial/models/block/ice_ether_ore.json
+d216eba2124f3d71f96eb473d88756771afa3631 assets/tutorial/models/block/raw_ice_ether_block.json
+e543d189af0fcf36e99a4c6f568b4ffc0c9efe35 assets/tutorial/models/item/ice_ether.json
+1b04f339d2cc10705d53f4696f2dbc2589877b6e assets/tutorial/models/item/material/cardboard.json
+ea2c10cf58767e7e22d57563f6d5df6c4f4f471f assets/tutorial/models/item/raw_ice_ether.json
