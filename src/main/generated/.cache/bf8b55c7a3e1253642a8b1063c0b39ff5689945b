@@ -2,6 +2,7 @@
 4b840b81a076b843220a6be099d2a36cb6e05b76 assets/tutorial/blockstates/ice_ether_block.json
 ca6814008032d78d8266fe133b457ffebf352cc8 assets/tutorial/blockstates/ice_ether_ore.json
 af4a4bf40cf59cc183b20d1ce2ac9b02c40e7af8 assets/tutorial/blockstates/raw_ice_ether_block.json
+8fbcc1dbc6a5f2a562dec321d2103aded2af9160 assets/tutorial/items/anthracite.json
 9df624bc6336a63cb55444a59347976b88ed83c1 assets/tutorial/items/cheese.json
 ad69013ab8a17680fe46d044f6c06767e75b492b assets/tutorial/items/corn.json
 5097578a0217dc7cc31c70c31e70a4e67f0d7398 assets/tutorial/items/ice_ether.json
@@ -14,6 +15,7 @@ d00554864d3832d8d55f36737a7f82f0dec912e8 assets/tutorial/items/raw_ice_ether_blo
 e8dedd8e7b326b91dffd911e73488c6ae6f8a21e assets/tutorial/models/block/ice_ether_block.json
 316ebcd07b9d253d60993983907b0bf9446ac7f3 assets/tutorial/models/block/ice_ether_ore.json
 d216eba2124f3d71f96eb473d88756771afa3631 assets/tutorial/models/block/raw_ice_ether_block.json
+0326925b5ee7ea100ce3c2a9781b69e4bfef57db assets/tutorial/models/item/anthracite.json
 1b1a76f490d1187907e0004b66e1b1f3317a8e4d assets/tutorial/models/item/cheese.json
 57e42c6ee853d18e3f64b8f62065cf01a68182da assets/tutorial/models/item/corn.json
 e543d189af0fcf36e99a4c6f568b4ffc0c9efe35 assets/tutorial/models/item/ice_ether.json

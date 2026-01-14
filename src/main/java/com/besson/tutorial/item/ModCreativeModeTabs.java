@@ -28,6 +28,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.STRAWBERRY);
                 output.accept(ModItems.CHEESE);
 
+                output.accept(ModItems.ANTHRACITE);
+
                 output.accept(Items.DIAMOND);
             }).build();
 

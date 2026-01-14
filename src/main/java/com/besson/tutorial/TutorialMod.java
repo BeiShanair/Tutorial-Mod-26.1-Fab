@@ -5,6 +5,7 @@ import com.besson.tutorial.item.ModCreativeModeTabs;
 import com.besson.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelValueEvents;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -25,6 +26,11 @@ public class TutorialMod implements ModInitializer {
 		ModItems.register();
 		ModBlocks.register();
 		ModCreativeModeTabs.register();
+
+		FuelValueEvents.BUILD.register((builder, context) -> {
+			builder.add(ModItems.ANTHRACITE, 1600);
+			builder.add(ModItems.CARDBOARD, 300);
+		});
 		LOGGER.info("Hello Fabric world!");
 	}
 }
