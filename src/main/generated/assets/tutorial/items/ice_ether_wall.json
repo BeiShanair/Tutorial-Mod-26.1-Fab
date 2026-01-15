@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tutorial:block/ice_ether_wall_inventory"
+  }
+}

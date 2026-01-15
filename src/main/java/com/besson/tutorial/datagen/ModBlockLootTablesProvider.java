@@ -30,6 +30,16 @@ public class ModBlockLootTablesProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.ICE_ETHER_BLOCK);
         dropSelf(ModBlocks.RAW_ICE_ETHER_BLOCK);
         add(ModBlocks.ICE_ETHER_ORE, createCopperOreLikeDrops(ModBlocks.ICE_ETHER_ORE, ModItems.RAW_ICE_ETHER));
+
+        dropSelf(ModBlocks.ICE_ETHER_STAIRS);
+        add(ModBlocks.ICE_ETHER_SLAB, createSlabItemTable(ModBlocks.ICE_ETHER_SLAB));
+        dropSelf(ModBlocks.ICE_ETHER_BUTTON);
+        dropSelf(ModBlocks.ICE_ETHER_PRESSURE_PLATE);
+        dropSelf(ModBlocks.ICE_ETHER_FENCE);
+        dropSelf(ModBlocks.ICE_ETHER_FENCE_GATE);
+        dropSelf(ModBlocks.ICE_ETHER_WALL);
+        add(ModBlocks.ICE_ETHER_DOOR, createDoorTable(ModBlocks.ICE_ETHER_DOOR));
+        dropSelf(ModBlocks.ICE_ETHER_TRAPDOOR);
     }
 
     public LootTable.Builder createCopperOreLikeDrops(final Block block, Item item) {

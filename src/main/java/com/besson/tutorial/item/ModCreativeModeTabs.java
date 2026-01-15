@@ -32,6 +32,16 @@ public class ModCreativeModeTabs {
 
                 output.accept(ModItems.PROSPECTOR);
 
+                output.accept(ModBlocks.ICE_ETHER_STAIRS);
+                output.accept(ModBlocks.ICE_ETHER_SLAB);
+                output.accept(ModBlocks.ICE_ETHER_FENCE);
+                output.accept(ModBlocks.ICE_ETHER_FENCE_GATE);
+                output.accept(ModBlocks.ICE_ETHER_WALL);
+                output.accept(ModBlocks.ICE_ETHER_PRESSURE_PLATE);
+                output.accept(ModBlocks.ICE_ETHER_BUTTON);
+                output.accept(ModBlocks.ICE_ETHER_DOOR);
+                output.accept(ModBlocks.ICE_ETHER_TRAPDOOR);
+
                 output.accept(Items.DIAMOND);
             }).build();
 

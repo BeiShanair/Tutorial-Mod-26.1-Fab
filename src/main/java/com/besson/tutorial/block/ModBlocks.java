@@ -8,9 +8,10 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 
 import java.util.function.Function;
 
@@ -21,6 +22,25 @@ public class ModBlocks {
             BlockBehaviour.Properties.ofFullCopy(Blocks.STONE),true);
     public static final Block ICE_ETHER_ORE = register("ice_ether_ore",
             BlockBehaviour.Properties.of().strength(1.0f, 3.0f).requiresCorrectToolForDrops(),true);
+
+    public static final Block ICE_ETHER_STAIRS = register("ice_ether_stairs",
+            p -> new StairBlock(ICE_ETHER_BLOCK.defaultBlockState(), p), BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK), true);
+    public static final Block ICE_ETHER_SLAB = register("ice_ether_slab", SlabBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK), true);
+    public static final Block ICE_ETHER_BUTTON = register("ice_ether_button", p -> new ButtonBlock(BlockSetType.STONE, 20, p),
+            BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK), true);
+    public static final Block ICE_ETHER_PRESSURE_PLATE = register("ice_ether_pressure_plate", p -> new PressurePlateBlock(BlockSetType.STONE, p),
+            BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK), true);
+    public static final Block ICE_ETHER_FENCE_GATE = register("ice_ether_fence_gate", p -> new FenceGateBlock(WoodType.OAK, p),
+            BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK), true);
+    public static final Block ICE_ETHER_FENCE = register("ice_ether_fence", FenceBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK), true);
+    public static final Block ICE_ETHER_WALL = register("ice_ether_wall", WallBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(ICE_ETHER_BLOCK), true);
+    public static final Block ICE_ETHER_DOOR = register("ice_ether_door", p -> new DoorBlock(BlockSetType.IRON, p),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_DOOR), true);
+    public static final Block ICE_ETHER_TRAPDOOR = register("ice_ether_trapdoor", p -> new TrapDoorBlock(BlockSetType.OAK, p),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR), true);
 
     public static Block register(final String name, final Function<BlockBehaviour.Properties, Block> factory, final BlockBehaviour.Properties properties, boolean shouldRegisterItem) {
         ResourceKey<Block> id = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
