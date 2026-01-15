@@ -39,6 +39,9 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.FIRE_ETHER_PICKAXE);
                 output.accept(ModItems.FIRE_ETHER_HOE);
 
+                output.accept(ModItems.PICKAXE_AXE_ITEM);
+                output.accept(ModItems.PICKAXE_AXE_ITEM2);
+
                 output.accept(ModBlocks.ICE_ETHER_STAIRS);
                 output.accept(ModBlocks.ICE_ETHER_SLAB);
                 output.accept(ModBlocks.ICE_ETHER_FENCE);

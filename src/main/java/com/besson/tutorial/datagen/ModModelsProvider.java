@@ -51,5 +51,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.FIRE_ETHER_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.FIRE_ETHER_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.FIRE_ETHER_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.PICKAXE_AXE_ITEM, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.PICKAXE_AXE_ITEM2, ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 }
