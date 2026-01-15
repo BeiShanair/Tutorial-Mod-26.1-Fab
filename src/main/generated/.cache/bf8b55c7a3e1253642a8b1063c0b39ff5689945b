@@ -9,6 +9,7 @@ ad69013ab8a17680fe46d044f6c06767e75b492b assets/tutorial/items/corn.json
 30db53660531ba44154d2bb57e596dc4d4670481 assets/tutorial/items/ice_ether_block.json
 83033eede292fac90240097408e6ae7df3525511 assets/tutorial/items/ice_ether_ore.json
 f22395e1cc92179743473f0f276b4b2e96a3e7f9 assets/tutorial/items/material/cardboard.json
+a909a698f63b86f0537d29e3ef6f61666224b9d7 assets/tutorial/items/prospector.json
 3969fdbe1a3f2409ebdf37d6d2a8b0f8b5dfe7cc assets/tutorial/items/raw_ice_ether.json
 d00554864d3832d8d55f36737a7f82f0dec912e8 assets/tutorial/items/raw_ice_ether_block.json
 836325448ecdaadde33ec9344f5d0235a75d326b assets/tutorial/items/strawberry.json
@@ -20,5 +21,6 @@ d216eba2124f3d71f96eb473d88756771afa3631 assets/tutorial/models/block/raw_ice_et
 57e42c6ee853d18e3f64b8f62065cf01a68182da assets/tutorial/models/item/corn.json
 e543d189af0fcf36e99a4c6f568b4ffc0c9efe35 assets/tutorial/models/item/ice_ether.json
 1b04f339d2cc10705d53f4696f2dbc2589877b6e assets/tutorial/models/item/material/cardboard.json
+9b878300962f4e25993bd65c4144d7857f956ecf assets/tutorial/models/item/prospector.json
 ea2c10cf58767e7e22d57563f6d5df6c4f4f471f assets/tutorial/models/item/raw_ice_ether.json
 90efa135df5e8d3bc3313e077a2e664a85295d64 assets/tutorial/models/item/strawberry.json

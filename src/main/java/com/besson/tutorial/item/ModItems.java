@@ -1,6 +1,7 @@
 package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialMod;
+import com.besson.tutorial.item.custom.ProspectorItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,6 +24,8 @@ public class ModItems {
     public static final Item CHEESE = registerItem("cheese", Item::new, new Item.Properties().food(ModFoods.CHEESE, ModConsumables.CHEESE));
 
     public static final Item ANTHRACITE = registerItem("anthracite");
+
+    public static final Item PROSPECTOR = registerItem("prospector", ProspectorItem::new, new Item.Properties().durability(127));
 
     private static Item registerItem(final String name, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));

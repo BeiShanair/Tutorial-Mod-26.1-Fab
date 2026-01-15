@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
 
                 output.accept(ModItems.ANTHRACITE);
 
+                output.accept(ModItems.PROSPECTOR);
+
                 output.accept(Items.DIAMOND);
             }).build();
 
