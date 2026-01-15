@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:beetroot"
+            "items": "#tutorial:sugar_tag"
           }
         ]
       },

@@ -1,3 +1,4 @@
 // 26.1-snapshot-3	-999999999-01-01T00:00:00	Tutorial Mod/Tags for minecraft:block
 b409326c2aceb6b45f05a657436b4762e92c5791 data/minecraft/tags/block/mineable/pickaxe.json
 6a41ff3a500def9c9dab7e2eef45c3be1ebafd2a data/minecraft/tags/block/needs_iron_tool.json
+418d6d3e6cbd7b35e57f8b9b560aab55766acc41 data/tutorial/tags/block/ore_tags.json

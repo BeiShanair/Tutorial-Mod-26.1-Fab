@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "minecraft:beetroot"
+    "#": "#tutorial:sugar_tag"
   },
   "pattern": [
     "###"
