@@ -19,5 +19,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
         valueLookupBuilder(ModItemTags.SUGAR_TAG)
                 .add(Items.BEETROOT)
                 .add(ModItems.STRAWBERRY);
+
+        valueLookupBuilder(ModItemTags.FIRE_ETHER_TOOL_MATERIALS)
+                .add(ModItems.FIRE_ETHER);
     }
 }

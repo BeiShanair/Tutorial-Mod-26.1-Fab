@@ -8,9 +8,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 
 import java.util.function.Function;
 
@@ -26,6 +24,18 @@ public class ModItems {
     public static final Item ANTHRACITE = registerItem("anthracite");
 
     public static final Item PROSPECTOR = registerItem("prospector", ProspectorItem::new, new Item.Properties().durability(127));
+
+    public static final Item FIRE_ETHER = registerItem("fire_ether");
+    public static final Item FIRE_ETHER_SWORD = registerItem("fire_ether_sword", Item::new,
+            new Item.Properties().sword(ModToolMaterials.FIRE_ETHER, 3, -2.4F));
+    public static final Item FIRE_ETHER_SHOVEL = registerItem("fire_ether_shovel",
+            p -> new ShovelItem(ModToolMaterials.FIRE_ETHER, 1.5F, -3.0F, p));
+    public static final Item FIRE_ETHER_AXE = registerItem("fire_ether_axe",
+            p -> new AxeItem(ModToolMaterials.FIRE_ETHER, 5.0F, -3.0F, p));
+    public static final Item FIRE_ETHER_PICKAXE = registerItem("fire_ether_pickaxe", Item::new,
+            new Item.Properties().pickaxe(ModToolMaterials.FIRE_ETHER, 1.0F, -2.8F));
+    public static final Item FIRE_ETHER_HOE = registerItem("fire_ether_hoe",
+            p -> new HoeItem(ModToolMaterials.FIRE_ETHER, -2, 0.0F, p));
 
     private static Item registerItem(final String name, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
