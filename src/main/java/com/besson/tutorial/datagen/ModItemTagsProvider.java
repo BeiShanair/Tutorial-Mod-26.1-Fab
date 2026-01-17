@@ -5,6 +5,7 @@ import com.besson.tutorial.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 
 import java.util.concurrent.CompletableFuture;
@@ -22,5 +23,11 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         valueLookupBuilder(ModItemTags.FIRE_ETHER_TOOL_MATERIALS)
                 .add(ModItems.FIRE_ETHER);
+
+        valueLookupBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ICE_ETHER_HELMET)
+                .add(ModItems.ICE_ETHER_CHESTPLATE)
+                .add(ModItems.ICE_ETHER_LEGGINGS)
+                .add(ModItems.ICE_ETHER_BOOTS);
     }
 }

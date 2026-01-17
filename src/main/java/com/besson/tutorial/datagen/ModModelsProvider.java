@@ -54,5 +54,10 @@ public class ModModelsProvider extends FabricModelProvider {
 
         itemModelGenerators.generateFlatItem(ModItems.PICKAXE_AXE_ITEM, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.PICKAXE_AXE_ITEM2, ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.ICE_ETHER_HELMET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ICE_ETHER_CHESTPLATE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ICE_ETHER_LEGGINGS, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ICE_ETHER_BOOTS, ModelTemplates.FLAT_ITEM);
     }
 }

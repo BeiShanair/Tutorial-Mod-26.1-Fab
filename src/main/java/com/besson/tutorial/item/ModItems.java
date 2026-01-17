@@ -11,6 +11,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.ArmorType;
 
 import java.util.function.Function;
 
@@ -43,6 +44,15 @@ public class ModItems {
             new Item.Properties().tool(ModToolMaterials.FIRE_ETHER, ModBlockTags.PICKAXE_AXE_MINEABLE, 5.0f, -2.4f, 0.0f));
     public static final Item PICKAXE_AXE_ITEM2 = registerItem("pickaxe_axe_item2",
             p -> new PickaxeAxeItem(ModToolMaterials.FIRE_ETHER, 5.0F, -2.4F, p));
+
+    public static final Item ICE_ETHER_HELMET = registerItem("ice_ether_helmet", Item::new,
+            new Item.Properties().humanoidArmor(ModArmorMaterials.ICE_ETHER, ArmorType.HELMET));
+    public static final Item ICE_ETHER_CHESTPLATE = registerItem("ice_ether_chestplate", Item::new,
+            new Item.Properties().humanoidArmor(ModArmorMaterials.ICE_ETHER, ArmorType.CHESTPLATE));
+    public static final Item ICE_ETHER_LEGGINGS = registerItem("ice_ether_leggings", Item::new,
+            new Item.Properties().humanoidArmor(ModArmorMaterials.ICE_ETHER, ArmorType.LEGGINGS));
+    public static final Item ICE_ETHER_BOOTS = registerItem("ice_ether_boots", Item::new,
+            new Item.Properties().humanoidArmor(ModArmorMaterials.ICE_ETHER, ArmorType.BOOTS));
 
     private static Item registerItem(final String name, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
