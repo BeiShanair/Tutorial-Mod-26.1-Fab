@@ -11,6 +11,8 @@ public class ModItemTags {
     public static final TagKey<Item> FIRE_ETHER_TOOL_MATERIALS = bind("fire_ether_tool_materials");
     public static final TagKey<Item> ICE_ETHER_ARMOR_MATERIALS = bind("ice_ether_armor_materials");
 
+    public static final TagKey<Item> ICE_ETHER_ARMOR = bind("ice_ether_armor");
+
     private static TagKey<Item> bind(final String name) {
         return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
     }

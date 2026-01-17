@@ -29,5 +29,13 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.ICE_ETHER_CHESTPLATE)
                 .add(ModItems.ICE_ETHER_LEGGINGS)
                 .add(ModItems.ICE_ETHER_BOOTS);
+
+        valueLookupBuilder(ModItemTags.ICE_ETHER_ARMOR_MATERIALS)
+                .add(ModItems.ICE_ETHER);
+        valueLookupBuilder(ModItemTags.ICE_ETHER_ARMOR)
+                .add(ModItems.ICE_ETHER_HELMET)
+                .add(ModItems.ICE_ETHER_CHESTPLATE)
+                .add(ModItems.ICE_ETHER_LEGGINGS)
+                .add(ModItems.ICE_ETHER_BOOTS);
     }
 }

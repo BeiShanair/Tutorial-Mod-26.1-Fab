@@ -3,6 +3,7 @@ package com.besson.tutorial;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.ModCreativeModeTabs;
 import com.besson.tutorial.item.ModItems;
+import com.besson.tutorial.util.ModArmorEffects;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelValueEvents;
@@ -31,6 +32,9 @@ public class TutorialMod implements ModInitializer {
 			builder.add(ModItems.ANTHRACITE, 1600);
 			builder.add(ModItems.CARDBOARD, 300);
 		});
+
+		ModArmorEffects.register();
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }
