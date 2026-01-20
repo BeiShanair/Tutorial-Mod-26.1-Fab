@@ -1,4 +1,5 @@
 // 26.1-snapshot-3	-999999999-01-01T00:00:00	Tutorial Mod/Block Loot Tables
+d7d03be6612ec37d55d48cdc5c4e1e8b0144c1a4 data/tutorial/loot_table/blocks/corn_crop.json
 83e39d9c3a4c785cffc089b3f4809990b18868ff data/tutorial/loot_table/blocks/ice_ether_block.json
 a3812404846f3302b5241096ba32c8068ccb4c80 data/tutorial/loot_table/blocks/ice_ether_button.json
 573b776d8353869b2be49454fb7df89e876dafad data/tutorial/loot_table/blocks/ice_ether_door.json

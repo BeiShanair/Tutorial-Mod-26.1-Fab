@@ -1,6 +1,7 @@
 package com.besson.tutorial.datagen;
 
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import com.besson.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -50,6 +51,10 @@ public class ModBlockLootTablesProvider extends FabricBlockLootSubProvider {
         LootItemCondition.Builder isStrawberryMaxAge = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.STRAWBERRY_CROP)
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCrop.AGE, 5));
         add(ModBlocks.STRAWBERRY_CROP, createCropDrops(ModBlocks.STRAWBERRY_CROP, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, isStrawberryMaxAge));
+
+        LootItemCondition.Builder isCornMaxAge = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.CORN_CROP)
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCrop.AGE, 8));
+        add(ModBlocks.CORN_CROP, createCropDrops(ModBlocks.CORN_CROP, ModItems.CORN, ModItems.CORN, isCornMaxAge));
     }
 
     public LootTable.Builder createCopperOreLikeDrops(final Block block, Item item) {
