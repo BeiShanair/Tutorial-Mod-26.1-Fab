@@ -1,6 +1,7 @@
 package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialMod;
+import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.custom.PickaxeAxeItem;
 import com.besson.tutorial.item.custom.ProspectorItem;
 import com.besson.tutorial.tag.ModBlockTags;
@@ -12,6 +13,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.level.block.Block;
 
 import java.util.function.Function;
 
@@ -53,6 +55,9 @@ public class ModItems {
             new Item.Properties().humanoidArmor(ModArmorMaterials.ICE_ETHER, ArmorType.LEGGINGS));
     public static final Item ICE_ETHER_BOOTS = registerItem("ice_ether_boots", Item::new,
             new Item.Properties().humanoidArmor(ModArmorMaterials.ICE_ETHER, ArmorType.BOOTS));
+
+    public static final Item STRAWBERRY_SEEDS = registerItem("strawberry_seeds",
+            p -> new BlockItem(ModBlocks.STRAWBERRY_CROP, p.useItemDescriptionPrefix()));
 
     private static Item registerItem(final String name, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));

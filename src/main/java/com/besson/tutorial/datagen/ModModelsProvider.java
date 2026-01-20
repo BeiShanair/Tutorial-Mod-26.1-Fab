@@ -1,6 +1,7 @@
 package com.besson.tutorial.datagen;
 
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.block.custom.StrawberryCrop;
 import com.besson.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -29,6 +30,8 @@ public class ModModelsProvider extends FabricModelProvider {
                 .wall(ModBlocks.ICE_ETHER_WALL);
         blockModelGenerators.createDoor(ModBlocks.ICE_ETHER_DOOR);
         blockModelGenerators.createTrapdoor(ModBlocks.ICE_ETHER_TRAPDOOR);
+
+        blockModelGenerators.createCropBlock(ModBlocks.STRAWBERRY_CROP, StrawberryCrop.AGE, 0, 1, 2, 3, 4, 5);
     }
 
     @Override

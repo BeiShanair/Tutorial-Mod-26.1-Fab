@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "tutorial:block/strawberry_crop_stage5"
+  }
+}

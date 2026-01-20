@@ -1,6 +1,7 @@
 package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialMod;
+import com.besson.tutorial.block.custom.StrawberryCrop;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Function;
 
@@ -41,6 +43,14 @@ public class ModBlocks {
             BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_DOOR), true);
     public static final Block ICE_ETHER_TRAPDOOR = register("ice_ether_trapdoor", p -> new TrapDoorBlock(BlockSetType.OAK, p),
             BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR), true);
+
+    public static final Block STRAWBERRY_CROP = register("strawberry_crop", StrawberryCrop::new,
+            BlockBehaviour.Properties.of()
+                    .noCollision()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.CROP)
+                    .pushReaction(PushReaction.DESTROY), false);
 
     public static Block register(final String name, final Function<BlockBehaviour.Properties, Block> factory, final BlockBehaviour.Properties properties, boolean shouldRegisterItem) {
         ResourceKey<Block> id = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));

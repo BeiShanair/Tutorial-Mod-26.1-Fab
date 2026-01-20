@@ -37,6 +37,8 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.PICKAXE_AXE_ITEM, "Pickaxe-Axe");
         translationBuilder.add(ModItems.PICKAXE_AXE_ITEM2, "Pickaxe-Axe2");
 
+        translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "Strawberry Seeds");
+
         translationBuilder.add(ModItems.ICE_ETHER_HELMET, "Ice Ether Helmet");
         translationBuilder.add(ModItems.ICE_ETHER_CHESTPLATE, "Ice Ether Chestplate");
         translationBuilder.add(ModItems.ICE_ETHER_LEGGINGS, "Ice Ether Leggings");

@@ -47,6 +47,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.ICE_ETHER_LEGGINGS);
                 output.accept(ModItems.ICE_ETHER_BOOTS);
 
+                output.accept(ModItems.STRAWBERRY_SEEDS);
+
                 output.accept(ModBlocks.ICE_ETHER_STAIRS);
                 output.accept(ModBlocks.ICE_ETHER_SLAB);
                 output.accept(ModBlocks.ICE_ETHER_FENCE);

@@ -10,5 +10,6 @@ public class TutorialModClient implements ClientModInitializer {
     public void onInitializeClient() {
         ChunkSectionLayerMap.putBlock(ModBlocks.ICE_ETHER_DOOR, ChunkSectionLayer.CUTOUT);
         ChunkSectionLayerMap.putBlock(ModBlocks.ICE_ETHER_TRAPDOOR, ChunkSectionLayer.CUTOUT);
+        ChunkSectionLayerMap.putBlock(ModBlocks.STRAWBERRY_CROP, ChunkSectionLayer.CUTOUT);
     }
 }
