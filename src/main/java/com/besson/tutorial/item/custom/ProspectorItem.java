@@ -35,7 +35,7 @@ public class ProspectorItem extends Item {
                             String name = blockState.getBlock().getName().getString();
 
                             if (isCorrectBlock(blockState)) {
-                                player.displayClientMessage(Component.literal("Found " + name + "!"), false);
+                                player.sendSystemMessage(Component.literal("Found " + name + "!"));
                                 found = true;
                                 break;
                             }
@@ -49,14 +49,14 @@ public class ProspectorItem extends Item {
                     String name = blockState.getBlock().getName().getString();
 
                     if (isCorrectBlock(blockState)) {
-                        player.displayClientMessage(Component.literal("Found " + name + "!"), false);
+                        player.sendSystemMessage(Component.literal("Found " + name + "!"));
                         found = true;
                         break;
                     }
                 }
             }
             if (!found) {
-                player.displayClientMessage(Component.literal("No ore found!"), false);
+                player.sendSystemMessage(Component.literal("No ore found!"));
             }
             context.getItemInHand().hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
             return InteractionResult.SUCCESS;
