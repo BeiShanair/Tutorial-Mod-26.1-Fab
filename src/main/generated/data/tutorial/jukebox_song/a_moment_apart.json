@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.tutorial.a_moment_apart"
+  },
+  "length_in_seconds": 235.0,
+  "sound_event": "tutorial:a_moment_apart_music_disc"
+}

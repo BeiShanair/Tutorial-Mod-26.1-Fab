@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/template_music_disc",
+  "textures": {
+    "layer0": "tutorial:item/a_moment_apart_music_disc"
+  }
+}

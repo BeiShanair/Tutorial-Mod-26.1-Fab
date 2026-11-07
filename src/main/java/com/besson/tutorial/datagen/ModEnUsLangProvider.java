@@ -72,5 +72,8 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add("subtitles.tutorial.block_place", "Block placed");
         translationBuilder.add("subtitles.tutorial.block_hit", "Block hit");
         translationBuilder.add("subtitles.tutorial.block_fall", "Something fell");
+
+        translationBuilder.add(ModItems.A_MOMENT_APART_MUSIC_DISC, "A Moment Apart");
+        translationBuilder.add("jukebox_song.tutorial.a_moment_apart", "A Moment Apart");
     }
 }

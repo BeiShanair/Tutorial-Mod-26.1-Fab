@@ -60,6 +60,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.ICE_ETHER_TRAPDOOR);
 
                 output.accept(Items.DIAMOND);
+                
+                output.accept(ModItems.A_MOMENT_APART_MUSIC_DISC);
             }).build();
 
     public static final ResourceKey<CreativeModeTab> TUTORIAL_TAB2 = ResourceKey.create(

@@ -78,5 +78,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.ICE_ETHER_CHESTPLATE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ICE_ETHER_LEGGINGS, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ICE_ETHER_BOOTS, ModelTemplates.FLAT_ITEM);
+        
+        itemModelGenerators.generateFlatItem(ModItems.A_MOMENT_APART_MUSIC_DISC, ModelTemplates.MUSIC_DISC);
     }
 }

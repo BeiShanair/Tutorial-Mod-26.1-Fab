@@ -1,6 +1,7 @@
 package com.besson.tutorial.sound;
 
 import com.besson.tutorial.TutorialMod;
+import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
@@ -18,6 +19,13 @@ public class ModSoundEvents {
     public static final SoundType ICE_ETHER_BLOCK_SOUND = new SoundType(
             1.0F, 1.0F,
             BLOCK_BREAK, BLOCK_STEP, BLOCK_PLACE, BLOCK_HIT, BLOCK_FALL);
+    
+    public static final Holder.Reference<SoundEvent> A_MOMENT_APART_MUSIC_DISC = registerForHolder("a_moment_apart_music_disc");
+    
+    private static Holder.Reference<SoundEvent> registerForHolder(String name) {
+        Identifier id = Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name);
+        return Registry.registerForHolder(BuiltInRegistries.SOUND_EVENT, id, SoundEvent.createVariableRangeEvent(id));
+    }
     
     private static SoundEvent register(String name) {
         Identifier id = Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name);

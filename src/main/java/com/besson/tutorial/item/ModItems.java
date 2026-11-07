@@ -4,6 +4,7 @@ import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.custom.PickaxeAxeItem;
 import com.besson.tutorial.item.custom.ProspectorItem;
+import com.besson.tutorial.sound.ModJukeboxSongs;
 import com.besson.tutorial.tag.ModBlockTags;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -58,6 +59,10 @@ public class ModItems {
 
     public static final Item STRAWBERRY_SEEDS = registerItem("strawberry_seeds",
             p -> new BlockItem(ModBlocks.STRAWBERRY_CROP, p.useItemDescriptionPrefix()));
+    
+    public static final Item A_MOMENT_APART_MUSIC_DISC = registerItem("a_moment_apart_music_disc",
+            Item::new, new Item.Properties().stacksTo(1).rarity(Rarity.RARE)
+                    .jukeboxPlayable(ModJukeboxSongs.A_MOMENT_APART));
 
     private static Item registerItem(final String name, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));

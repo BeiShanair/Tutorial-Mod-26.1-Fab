@@ -34,5 +34,10 @@
     "sounds": [
       "tutorial:block_fall"
     ]
+  },
+  "a_moment_apart_music_disc": {
+    "sounds": [
+      "tutorial:a_moment_apart"
+    ]
   }
 }
