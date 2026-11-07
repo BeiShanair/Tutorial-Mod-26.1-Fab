@@ -3,6 +3,7 @@ package com.besson.tutorial.block;
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
+import com.besson.tutorial.sound.ModSoundEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -20,7 +21,7 @@ import java.util.function.Function;
 
 public class ModBlocks {
     public static final Block ICE_ETHER_BLOCK = register("ice_ether_block",
-            BlockBehaviour.Properties.of().strength(1.0f, 3.0f),true);
+            BlockBehaviour.Properties.of().strength(1.0f, 3.0f).sound(ModSoundEvents.ICE_ETHER_BLOCK_SOUND),true);
     public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block",
             BlockBehaviour.Properties.ofFullCopy(Blocks.STONE),true);
     public static final Block ICE_ETHER_ORE = register("ice_ether_ore",

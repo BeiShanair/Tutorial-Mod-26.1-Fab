@@ -1,0 +1,38 @@
+{
+  "prospector_found_ore": {
+    "subtitle": "subtitles.tutorial.prospector_found_ore",
+    "sounds": [
+      "tutorial:1"
+    ]
+  },
+  "block_break": {
+    "subtitle": "subtitles.tutorial.block_break",
+    "sounds": [
+      "tutorial:block_break"
+    ]
+  },
+  "block_step": {
+    "subtitle": "subtitles.tutorial.block_step",
+    "sounds": [
+      "tutorial:block_step"
+    ]
+  },
+  "block_place": {
+    "subtitle": "subtitles.tutorial.block_place",
+    "sounds": [
+      "tutorial:block_place"
+    ]
+  },
+  "block_hit": {
+    "subtitle": "subtitles.tutorial.block_hit",
+    "sounds": [
+      "tutorial:block_hit"
+    ]
+  },
+  "block_fall": {
+    "subtitle": "subtitles.tutorial.block_fall",
+    "sounds": [
+      "tutorial:block_fall"
+    ]
+  }
+}

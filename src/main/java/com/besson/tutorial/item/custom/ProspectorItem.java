@@ -1,9 +1,11 @@
 package com.besson.tutorial.item.custom;
 
+import com.besson.tutorial.sound.ModSoundEvents;
 import com.besson.tutorial.tag.ModBlockTags;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
@@ -55,7 +57,9 @@ public class ProspectorItem extends Item {
                     }
                 }
             }
-            if (!found) {
+            if (found) {
+                level.playSound(null, pos, ModSoundEvents.PROSPECTOR_FOUND_ORE, SoundSource.BLOCKS, 1.0f, 1.0f);
+            } else {
                 player.sendSystemMessage(Component.literal("No ore found!"));
             }
             context.getItemInHand().hurtAndBreak(1, player, EquipmentSlot.MAINHAND);

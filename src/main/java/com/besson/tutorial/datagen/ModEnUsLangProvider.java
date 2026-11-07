@@ -65,5 +65,12 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add("tooltip.tutorial.pickaxe_axe_tooltip", "Hold §6§n§l§oSHIFT§r§r§r§r for more info!");
         
         translationBuilder.add("entity.tutorial.villager.ice_ether_master", "Ice Ether Master");
+
+        translationBuilder.add("subtitles.tutorial.prospector_found_ore", "Prospector found ore");
+        translationBuilder.add("subtitles.tutorial.block_break", "Block breaks");
+        translationBuilder.add("subtitles.tutorial.block_step", "Footsteps");
+        translationBuilder.add("subtitles.tutorial.block_place", "Block placed");
+        translationBuilder.add("subtitles.tutorial.block_hit", "Block hit");
+        translationBuilder.add("subtitles.tutorial.block_fall", "Something fell");
     }
 }
