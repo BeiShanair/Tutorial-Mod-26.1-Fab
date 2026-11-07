@@ -1,0 +1,13 @@
+{
+  "gives": {
+    "count": 15,
+    "id": "tutorial:strawberry"
+  },
+  "max_uses": 16.0,
+  "reputation_discount": 0.5,
+  "wants": {
+    "count": 2.0,
+    "id": "minecraft:emerald"
+  },
+  "xp": 5.0
+}
