@@ -35,6 +35,10 @@ public class ModCustomTrades {
     public static final ResourceKey<VillagerTrade> FARMER_1_EMERALD_STRAWBERRY = resourceKey("farmer/1/emerald_strawberry");
     public static final ResourceKey<VillagerTrade> FARMER_2_CORN_EMERALD = resourceKey("farmer/2/corn_emerald");
     public static final ResourceKey<VillagerTrade> TOOLSMITH_2_EMERALD_PICKAXE_AXE = resourceKey("toolsmith/2/emerald_pickaxe_axe");
+    
+    public static final ResourceKey<VillagerTrade> ICE_ETHER_MASTER_1_EMERALD_PICKAXE_AXE = resourceKey("ice_ether_master/1/emerald_pickaxe_axe");
+    public static final ResourceKey<VillagerTrade> ICE_ETHER_MASTER_1_ICE_ETHER_EMERALD = resourceKey("ice_ether_master/1/ice_ether_emerald");
+    public static final ResourceKey<VillagerTrade> ICE_ETHER_MASTER_2_EMERALD_RAW_ICE_ETHER = resourceKey("ice_ether_master/2/emerald_raw_ice_ether");
 
     public static ResourceKey<VillagerTrade> resourceKey(final String path) {
         return ResourceKey.create(Registries.VILLAGER_TRADE, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, path));
@@ -60,6 +64,20 @@ public class ModCustomTrades {
                 new ItemStackTemplate(ModItems.PICKAXE_AXE_ITEM, 1),
                 16, 5, 0.5f, Optional.empty(),
                 enchantedItem(items, enchantmentsForTradedEquipment, ModItems.PICKAXE_AXE_ITEM)));
+        
+        register(context, ICE_ETHER_MASTER_1_EMERALD_PICKAXE_AXE, new VillagerTrade(
+                new TradeCost(Items.EMERALD, 10),
+                new ItemStackTemplate(ModItems.PICKAXE_AXE_ITEM, 1),
+                16, 5, 0.5f, Optional.empty(),
+                enchantedItem(items, enchantmentsForTradedEquipment, ModItems.PICKAXE_AXE_ITEM)));  
+        register(context, ICE_ETHER_MASTER_1_ICE_ETHER_EMERALD, new VillagerTrade(
+                new TradeCost(ModItems.ICE_ETHER, 10),
+                new ItemStackTemplate(Items.EMERALD, 5),
+                16, 5, 0.5f, Optional.empty(), List.of()));
+        register(context, ICE_ETHER_MASTER_2_EMERALD_RAW_ICE_ETHER, new VillagerTrade(
+                new TradeCost(Items.EMERALD, 10),
+                new ItemStackTemplate(ModItems.RAW_ICE_ETHER, 1),
+                16, 5, 0.5f, Optional.empty(), List.of()));
     }
     
     public static List<LootItemFunction> enchantedItem(final HolderGetter<Item> items, final Optional<HolderSet<Enchantment>> options, final Item expectedItem) {

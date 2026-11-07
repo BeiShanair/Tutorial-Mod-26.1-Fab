@@ -1,0 +1,12 @@
+{
+  "gives": {
+    "id": "tutorial:raw_ice_ether"
+  },
+  "max_uses": 16.0,
+  "reputation_discount": 0.5,
+  "wants": {
+    "count": 10.0,
+    "id": "minecraft:emerald"
+  },
+  "xp": 5.0
+}

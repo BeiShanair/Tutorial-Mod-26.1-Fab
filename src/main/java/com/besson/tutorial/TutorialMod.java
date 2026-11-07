@@ -4,6 +4,7 @@ import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.ModCreativeModeTabs;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.util.ModArmorEffects;
+import com.besson.tutorial.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelValueEvents;
@@ -27,6 +28,8 @@ public class TutorialMod implements ModInitializer {
 		ModItems.register();
 		ModBlocks.register();
 		ModCreativeModeTabs.register();
+
+		ModVillagers.registerVillagers();
 
 		FuelValueEvents.BUILD.register((builder, context) -> {
 			builder.add(ModItems.ANTHRACITE, 1600);
